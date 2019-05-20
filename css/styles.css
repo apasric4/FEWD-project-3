@@ -1,18 +1,36 @@
 * {
     box-sizing: border-box;
 }
-h1 {
+body {
+	background: seashell;
+	font-family: 'Merriweather', serif;
 }
-
 .header-content {
 	text-align: center;
-	background: navajowhite;
-	border: 1px solid red;
+	background: #29405a;
+	color: white;
+	border: 1px solid #29405a;
 	
 }
 .signup {
 	text-align: center;
-	border-bottom: 2px black dashed;
+	border-bottom: 2px #29405a dashed;
 	margin: 0 auto;
 	width: 90%;
+}
+form {
+	margin: 10px auto;
+	width: 60%;
+	border: 1px red solid;
+}
+fieldset {
+	padding: 10px;
+	margin: 20px;
+	border: 1px black solid;
+}
+/*input styles*/
+input[type="text"],
+input[type="mail"],
+input[type="number"] {
+	display: inline-block;
 }
