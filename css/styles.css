@@ -4,4 +4,11 @@
 .header-content {
     text-align: center;
     background: navajowhite;
+    border: red solid 1px;
+}
+.signup {
+    text-align: center;
+    border-bottom: 2px black dashed;
+    margin: 0 auto;
+    width: 90%;
 }
