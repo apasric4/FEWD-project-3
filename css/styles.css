@@ -22,6 +22,7 @@ form {
 	width: 65%;
 	background:#f4f7f8;
 	padding: 10px;
+	border-radius: 10px;
 	border: 1px red solid;
 }
 .field {
@@ -37,4 +38,7 @@ form {
 input[type="text"],
 input[type="email"],
 input[type="number"],
-input[type="tel"] 
+input[type="tel"] {
+	width: initial;
+}
+	
