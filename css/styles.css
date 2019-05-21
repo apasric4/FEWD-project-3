@@ -24,6 +24,8 @@ form {
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px red solid;
+	display: flex;
+	flex-direction: column;
 }
 .field {
 	padding: 20px;
@@ -51,6 +53,7 @@ button[type="submit"] {
 	color: #FFF;
 	padding: 10px 30px;
 	border: none;
+	border-radius: 5px;
 }
 	
 	
