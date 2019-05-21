@@ -24,15 +24,11 @@ form {
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px red solid;
-	display: flex;
-	flex-direction: column;
 }
 .field {
 	padding: 20px;
 	margin: 20px;
 	border: 3px red solid;
-	display: flex;
-	flex-direction: column;
 }
 
 /*input styles*/
@@ -44,16 +40,47 @@ textarea,
 select {
 	background: #e8eeef;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-	width: initial;
-	border:none;
-	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 0;
 }
 button[type="submit"] {
-	background: #39b15d;
+	background: #52bab3;
 	color: #FFF;
 	padding: 10px 30px;
 	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 }
-	
-	
+
+.news-input {
+	margin-bottom: 20px;
+}
+.news-input label {
+	margin-left: 10px;
+}
+.contact-input {
+	margin: 20px auto;
+	padding-bottom: 25px;
+	border: 1px red solid;
+}
+
+.contact-input input,
+.contact-input select {
+	float: right;
+	width: 75%;
+}
+
+#zip {
+	width: 40%;
+}
+
+@media (min-width 769px) {
+
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }

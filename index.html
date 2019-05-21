@@ -23,24 +23,35 @@
 
 		<form action="index.html" get="post" class="registration-form">
       <fieldset class="first field">
-          <legend>Contact Information</legend>
+        <legend>Contact Information</legend>
 
-          <label for="name">Name:</label>
+        <div class="contact-input">
+          <label for="name">Name</label>
           <input type="text" id="name" name="user_name">
+        </div> 
 
-          <label for="mail">Email Address:</label>
+        <div class="contact-input">
+          <label for="mail">Email Address</label>
           <input type="email" id="mail" name="user_email">
+        </div>
 
-          <label for="phone-number">Phone Number:</label>
+        <div class="contact-input">
+          <label for="phone-number">Phone Number</label>
           <input type="tel" id="phone-number" name="user_phone">
+        </div>
 
-          <label for="street">Street Address:</label>
+        <div class="contact-input">
+          <label for="street">Street Address</label>
           <input type="text" id="street" name="user_street">
+        </div>
 
-          <label for="city">City:</label>
+        <div class="contact-input">
+          <label for="city">City</label>
           <input type="text" id="city" name="user_city">
+        </div>
 
-          <label for="state">State:</label>
+        <div class="contact-input">
+          <label for="state">State</label>
           <select id="state" name= "user_state">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -93,34 +104,50 @@
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
+          </select>
+        </div>
 
-          <label for="zip">Zip Code:</label>
+        <div class="contact-input">
+          <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="user_zipcode">
+        </div>
+          
 
       </fieldset>
       
       <fieldset class="second field">
         <legend>Newsletter</legend>
 
-        <label>Select the newspaper you'd like to recieve:</label>
-        <input type="checkbox" id="html-news" name="user_htm-news" checked></input>
-        <label for="html-news">HTML News</label><br>
-        
+        <p>Select the newspaper you'd like to recieve:</p>
 
-        <input type="checkbox" id="css-news" name="user_css-news">
-        <label for="css-news">CSS News</label>
+        <div class="news-input">
+          <input type="checkbox" id="html-news" name="user_htm-news" checked></input>
+          <label for="html-news">HTML News</label>
+        </div>
         
-        <input type="checkbox" id="javascript-news" name="user_javascript-news">
-        <label for="javascript-news">Javascript News</label>
-
-        <label>Newsletter Format</label>
-        <input type="radio" id="html" name="user_newsletter-format" checked>
-        <label for="html">HTML</label>
-
-        <input type="radio" id="css-news" name="user_newsletter-format">
-        <label for="css-news">CSS News</label>
+        <div class="news-input">
+          <input type="checkbox" id="css-news" name="user_css-news">
+          <label for="css-news">CSS News</label>
+        </div>
         
-        <label>Other topics you'd like to hear about</label>
+        <div class="news-input">
+          <input type="checkbox" id="javascript-news" name="user_javascript-news">
+          <label for="javascript-news">Javascript News</label>
+        </div>
+
+        <p>Newsletter Format</p>
+        
+        <div class="news-input">
+          <input type="radio" id="html" name="user_newsletter-format" checked>
+          <label for="html">HTML</label>
+        </div>
+        
+        <div class="news-input">
+          <input type="radio" id="css-news" name="user_newsletter-format">
+          <label for="css-news">CSS News</label>
+        </div>
+        
+        <p>Other topics you'd like to hear about</p>
         <textarea id="topics" name="user_topics"></textarea>
 
       </fieldset>
