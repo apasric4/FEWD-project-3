@@ -20,7 +20,7 @@ body {
 form {
 	margin: 10px auto;
 	width: 65%;
-	background:#f4f7f8;
+	background:#feffff;
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px red solid;
@@ -37,8 +37,20 @@ form {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
-input[type="tel"] {
+input[type="tel"],
+textarea,
+select {
+	background: #e8eeef;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	width: initial;
+	border:none;
+	padding: 10px;
 }
+button[type="submit"] {
+	background: #39b15d;
+	color: #FFF;
+	padding: 10px 30px;
+	border: none;
+}
+	
 	
