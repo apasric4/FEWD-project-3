@@ -20,6 +20,8 @@ body {
 form {
 	margin: 10px auto;
 	width: 65%;
+	background:#f4f7f8;
+	padding: 10px;
 	border: 1px red solid;
 }
 .field {
