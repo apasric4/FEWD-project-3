@@ -10,7 +10,6 @@ body {
 	background: #29405a;
 	color: white;
 	border: 1px solid #29405a;
-	
 }
 .signup {
 	text-align: center;
@@ -20,17 +19,20 @@ body {
 }
 form {
 	margin: 10px auto;
-	width: 60%;
+	width: 65%;
 	border: 1px red solid;
 }
-fieldset {
-	padding: 10px;
+.field {
+	padding: 20px;
 	margin: 20px;
-	border: 1px black solid;
+	border: 3px red solid;
+	display: flex;
+	flex-direction: column;
 }
+
 /*input styles*/
+
 input[type="text"],
-input[type="mail"],
-input[type="number"] {
-	display: inline-block;
-}
+input[type="email"],
+input[type="number"],
+input[type="tel"] 
