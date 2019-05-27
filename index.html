@@ -16,44 +16,44 @@
       </div>
     </header>
 
-    <div class="signup">
+    <div class="sign-up-for">
       <h2>Sign up for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
 		<form action="index.html" get="post" class="form">
-
-      <fieldset class="field">
+      <fieldset class="field" id="contact">
         <legend>Contact Information</legend>
 
         <div class="contact-input">
           <label class="label" for="name">Name</label>
-          <input class= "input" type="text" id="name" name="user_name">
+          <input class= "input" type="text" id="name" name="user_name" placeholder="Required" required>
         </div> 
 
         <div class="contact-input">
           <label class= "label" for="mail">Email Address</label>
-          <input class="input" type="email" id="mail" name="user_email">
+          <input requied class="input" type="email" id="mail" name="user_email" placeholder="Required" required>
         </div>
 
         <div class="contact-input">
           <label class="label" for="phone-number">Phone Number</label>
-          <input class="input" type="tel" id="phone-number" name="user_phone">
+          <input class="input" type="tel" id="phone-number" name="user_phone" placeholder="Required" required>
         </div>
 
         <div class="contact-input">
           <label class="label" for="street">Street Address</label>
-          <input class="input" type="text" id="street" name="user_street">
+          <input class="input" type="text" id="street" name="user_street" placeholder="Required" required>
         </div>
 
         <div class="contact-input">
           <label class="label" for="city">City</label>
-          <input class="input" type="text" id="city" name="user_city">
+          <input class="input" type="text" id="city" name="user_city" placeholder="Required" required>
         </div>
 
         <div class="contact-input">
           <label class="label" for="state">State</label>
           <select class="input" id="state" name= "user_state">
+            <option class= "first-value" value="AL">Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -110,18 +110,18 @@
 
         <div class="contact-input zip">
           <label class="label zip-label" for="zip">Zip Code</label>
-          <input class="input zip-input" type="text" id="zip" name="user_zipcode">
-        </div>
-          
+          <input class="input zip-input" type="text" id="zip" name="user_zipcode" placeholder="Required" required>
+        <div>
+            
       </fieldset>
       
-      <fieldset class="field">
+      <fieldset class="field news-letter">
         <legend>Newsletter</legend>
 
         <p>Select the newspaper you'd like to recieve:</p>
 
         <div class="news-input">
-          <input type="checkbox" id="html-news" name="user_htm-news" checked></input>
+          <input type="checkbox" id="html-news" name="user_htm-news" checked>
           <label for="html-news">HTML News</label>
         </div>
         
@@ -143,22 +143,18 @@
         </div>
         
         <div class="news-input">
-          <input type="radio" id="css-news" name="user_newsletter-format">
-          <label for="css-news">CSS News</label>
+          <input type="radio" id="plain-text" name="user_newsletter-format">
+          <label for="plain-text">Plain Text</label>
         </div>
         
         <p>Other topics you'd like to hear about</p>
-        <div class="textarea">
-          <textarea id="topics" name="user_topics"></textarea>
-        </div>
+        
+        <textarea rows= "5" id="topics" name="user_topics" class="txt-area"></textarea>
+        <button type="submit" class="btn">Sign Up</button>
 
       </fieldset>
 
-      <div class="button">
-        <button type="submit">Sign Up</button>
-      </div>
-
-      <div class="extra-info">
+      <div class="copyright">
         <p>Copyright the Code Review</p>
       </div>
 

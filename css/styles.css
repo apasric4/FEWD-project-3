@@ -2,33 +2,50 @@
     box-sizing: border-box;
 }
 body {
-	background: seashell;
+	background: seashell; 
 	font-family: 'Merriweather', serif;
+	padding-bottom: 100px;
+	color: black;
 }
+
 .header-content {
 	text-align: center;
 	background: #29405a;
 	color: white;
 	border: 1px solid #29405a;
 }
-.signup {
-	text-align: center;
-	border-bottom: 2px #29405a dashed;
-	margin: 0 auto;
-	width: 90%;
-}
+
 .form {
 	margin: 10px auto;
-	width: 70%;
+	width: 90%;
 	background:#feffff;
-	padding: 30px;
-	border-radius: 10px;
-	border: 1px red solid;
-}
-.field {
 	padding: 20px;
+	border-radius: 10px;
+}
+
+legend {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: black;
+}
+
+.sign-up-for {
+	text-align: center;
 	margin: 0 auto;
-	border: 3px red solid;
+	width: 90%;
+	padding-bottom: 20px;
+	border-bottom: 2px dashed black;
+}
+
+.field {
+	display: block;
+	padding: 10px;
+	margin: 30px auto 0;
+	border: none;
+}
+#contact {
+	border-bottom: 2px dashed black;
+	margin-top: 15px;
 }
 
 /*input styles*/
@@ -40,19 +57,48 @@ textarea,
 select {
 	background: #e8eeef;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: none;
 	border: none;
 	border-radius: 5px;
 	padding: 12px 0;
+	padding-right: 5px;
+	font-size: 0.8em;
+	transition: box-shadow 150ms ease-in;
+	outline: none;
 }
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+	box-shadow: 0 0 5px #52bab3;
+}
+
+::placeholder,
+select {
+	text-align: right;
+	color: rgb(192, 190, 190);
+}
+
 button[type="submit"] {
 	background: #52bab3;
 	color: #FFF;
-	padding: 10px 30px;
+	padding: 20px 0;
+	padding-right: 10px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 }
 
+.txt-area,
+.btn {
+	display: block;
+	width: 100%;
+}
+
+.txt-area {
+	margin-bottom: 30px;
+}
 .news-input {
 	margin-bottom: 20px;
 }
@@ -61,7 +107,6 @@ button[type="submit"] {
 }
 .contact-input {
 	margin: 20px auto;
-	border: 1px red solid;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -69,20 +114,20 @@ button[type="submit"] {
 .label {
 	margin-bottom: 10px;
 }
-.textarea {
-	display: flex;
-	flex-direction: column;
-}
-.button {
-	display: flex;
-	flex-direction: column;
-}
-.extra-info {
+.copyright {
 	text-align: center;
+	color: rgb(192, 190, 190)
 }
 
 @media (min-width: 768px) {
 
+	.sign-up-for {
+		width: 60%;
+	}
+	.form {
+		width: 60%;	
+	}
+	
 	.contact-input {
 		display: flex;
 		flex-direction: row;
@@ -99,7 +144,6 @@ button[type="submit"] {
 		flex: 0;
 		flex-basis: 25%;
 	}
-
 }
 
 
