@@ -99,8 +99,11 @@ button[type="submit"] {
 .txt-area {
 	margin-bottom: 30px;
 }
+.contact-input label {
+	margin-bottom: 10px;
+}
 .news-input {
-	margin-bottom: 20px;
+	margin: 25px 0;
 }
 .news-input label {
 	margin-left: 10px;
@@ -111,9 +114,7 @@ button[type="submit"] {
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-.label {
-	margin-bottom: 10px;
-}
+
 .copyright {
 	text-align: center;
 	color: rgb(192, 190, 190)
